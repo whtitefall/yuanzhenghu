@@ -6,6 +6,7 @@
     <title>Yuanzheng Hu | Software Developer</title>
     <meta name="description" content="Yuanzheng Hu - Software Developer at Nokia in Ottawa. Full-stack engineering with React, Spring Boot and Kafka, LLM agents, and machine learning. MCS (Applied AI), University of Ottawa.">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b1120">
     <link rel="canonical" href="https://whtitefall.github.io/yuanzhenghu/">
     <meta property="og:title" content="Yuanzheng Hu">
     <meta property="og:description" content="Software Developer at Nokia building real-time full-stack features for Nokia WaveSuite and LLM agents for an AI assistant.">
@@ -13,6 +14,9 @@
     <meta property="og:url" content="https://whtitefall.github.io/yuanzhenghu/">
     <meta name="twitter:card" content="summary">
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;650;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script type="application/ld+json">
       {
@@ -56,70 +60,60 @@
   <body data-page="resume">
     <a class="skip-link" href="#resume" data-i18n="skip.resume">Skip to resume</a>
 
-    <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Yuanzheng Hu home">
-        <span class="brand-mark">YH</span>
-        <span class="brand-text">Yuanzheng Hu</span>
-      </a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a class="is-active" href="index.html" data-i18n="nav.resume">Resume</a>
-        <a href="blog.html" data-i18n="nav.blog">白瀑博客</a>
-        <a href="https://www.linkedin.com/in/yuanzheng-hu/" rel="noreferrer">LinkedIn</a>
-      </nav>
-      <div class="site-controls" aria-label="Site settings">
-        <div class="language-switch" id="language-switch" aria-label="Language">
-          <button type="button" data-lang-option="en" aria-pressed="true">EN</button>
-          <button type="button" data-lang-option="zh" aria-pressed="false">中文</button>
-        </div>
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">Dark</button>
-      </div>
-    </header>
+    <div class="resume-layout">
+      <aside class="sidebar">
+        <p class="side-kicker mono-label"><span data-i18n="resume.role">Software Developer</span><span data-i18n="resume.location">Ottawa, Canada</span></p>
+        <h1 class="side-name">Yuanzheng&nbsp;Hu</h1>
+        <p class="side-headline" data-i18n="resume.headline"></p>
 
-    <main id="resume" class="resume-page">
-      <section class="resume-hero" aria-labelledby="resume-title">
-        <p class="hero-label"><span data-i18n="resume.role">Software Developer</span><span data-i18n="resume.location">Ottawa, Canada</span></p>
-        <h1 id="resume-title">Yuanzheng Hu</h1>
-        <p class="hero-headline" data-i18n="resume.headline"></p>
-        <div class="resume-actions">
+        <nav class="side-nav" aria-label="Section navigation">
+          <a class="is-active" href="#about" data-i18n="profile.title">About</a>
+          <a href="#experience" data-i18n="experience.title">Work</a>
+          <a href="#skills" data-i18n="skills.title">Technical Areas</a>
+          <a href="#education" data-i18n="education.title">Education</a>
+          <a href="#publications" data-i18n="research.title">Publications</a>
+        </nav>
+
+        <div class="side-actions">
           <a class="button button-primary" href="mailto:yuanzheng.hu.brad@gmail.com" data-i18n="action.email">Email</a>
           <a class="button button-secondary" href="https://www.linkedin.com/in/yuanzheng-hu/" rel="noreferrer" data-i18n="action.linkedin">LinkedIn</a>
           <a class="button button-secondary" href="https://github.com/whtitefall" rel="noreferrer" data-i18n="action.github">GitHub</a>
           <a class="button button-secondary" href="blog.html" data-i18n="action.blog">Read Blog</a>
         </div>
-        <dl class="hero-facts">
-          <div><dt data-i18n="fact.current"></dt><dd data-i18n="fact.currentValue"></dd></div>
-          <div><dt data-i18n="fact.location"></dt><dd data-i18n="fact.locationValue"></dd></div>
-          <div><dt data-i18n="fact.education"></dt><dd data-i18n="fact.educationValue"></dd></div>
-          <div><dt data-i18n="fact.languages"></dt><dd data-i18n="fact.languagesValue"></dd></div>
-        </dl>
-      </section>
 
-      <section class="resume-section intro-section" aria-labelledby="profile-title">
-        <div class="section-index">01</div>
-        <div class="section-body">
-          <p class="section-kicker" data-i18n="profile.kicker">Profile</p>
-          <h2 id="profile-title" data-i18n="profile.title">About</h2>
-          <p class="profile-text" data-i18n="profile.body"></p>
-          <p class="profile-text" data-i18n="profile.body2"></p>
-        </div>
-      </section>
-
-      <section class="resume-section" aria-labelledby="experience-title">
-        <div class="section-index">02</div>
-        <div class="section-body">
-          <div class="section-head">
-            <div>
-              <p class="section-kicker" data-i18n="experience.kicker">Experience</p>
-              <h2 id="experience-title" data-i18n="experience.title">Work</h2>
-            </div>
+        <div class="side-bottom" aria-label="Site settings">
+          <div class="language-switch" id="language-switch" aria-label="Language">
+            <button type="button" data-lang-option="en" aria-pressed="true">EN</button>
+            <button type="button" data-lang-option="zh" aria-pressed="false">中文</button>
           </div>
-          <div class="timeline">
-            <article class="timeline-item">
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">Dark</button>
+        </div>
+      </aside>
+
+      <main id="resume" class="content">
+        <section id="about" class="content-section" aria-labelledby="profile-title">
+          <div class="section-title">
+            <span class="mono-label">01</span>
+            <h2 id="profile-title" data-i18n="profile.title">About</h2>
+          </div>
+          <div class="prose">
+            <p data-i18n="profile.body"></p>
+            <p data-i18n="profile.body2"></p>
+          </div>
+        </section>
+
+        <section id="experience" class="content-section" aria-labelledby="experience-title">
+          <div class="section-title">
+            <span class="mono-label">02</span>
+            <h2 id="experience-title" data-i18n="experience.title">Work</h2>
+          </div>
+          <div class="xp-list">
+            <article class="xp-card">
               <time data-i18n="job.nokiaCurrent.date"></time>
               <div>
                 <h3 data-i18n="job.nokiaCurrent.title"></h3>
-                <p data-i18n="job.nokiaCurrent.body"></p>
-                <ul class="job-bullets">
+                <p class="xp-role" data-i18n="job.nokiaCurrent.body"></p>
+                <ul class="xp-bullets">
                   <li data-i18n="job.nokiaCurrent.b1"></li>
                   <li data-i18n="job.nokiaCurrent.b2"></li>
                   <li data-i18n="job.nokiaCurrent.b3"></li>
@@ -130,146 +124,144 @@
                 <div class="mini-tags"><span>Java Spring Boot</span><span>React TypeScript</span><span>Kafka</span><span>WebSockets</span><span>CometD</span><span>LLM Agents</span></div>
               </div>
             </article>
-            <article class="timeline-item">
+            <article class="xp-card">
               <time data-i18n="job.nokiaPast.date"></time>
               <div>
                 <h3 data-i18n="job.nokiaPast.title"></h3>
-                <p data-i18n="job.nokiaPast.body"></p>
-                <ul class="job-bullets">
+                <p class="xp-role" data-i18n="job.nokiaPast.body"></p>
+                <ul class="xp-bullets">
                   <li data-i18n="job.nokiaPast.b1"></li>
                   <li data-i18n="job.nokiaPast.b2"></li>
                 </ul>
                 <div class="mini-tags"><span>React</span><span>Spring Boot</span><span>H2</span><span>Highcharts</span></div>
               </div>
             </article>
-            <article class="timeline-item">
+            <article class="xp-card">
               <time data-i18n="job.ta.date"></time>
               <div>
                 <h3 data-i18n="job.ta.title"></h3>
-                <p data-i18n="job.ta.body"></p>
+                <p class="xp-role" data-i18n="job.ta.body"></p>
               </div>
             </article>
-            <article class="timeline-item">
+            <article class="xp-card">
               <time data-i18n="job.silexon.date"></time>
               <div>
                 <h3 data-i18n="job.silexon.title"></h3>
-                <p data-i18n="job.silexon.body"></p>
+                <p class="xp-role" data-i18n="job.silexon.body"></p>
                 <div class="mini-tags"><span>PyTorch</span><span>Python</span><span>GNN</span></div>
               </div>
             </article>
-            <article class="timeline-item">
+            <article class="xp-card">
               <time data-i18n="job.raMotion.date"></time>
               <div>
                 <h3 data-i18n="job.raMotion.title"></h3>
-                <p data-i18n="job.raMotion.body"></p>
+                <p class="xp-role" data-i18n="job.raMotion.body"></p>
                 <div class="mini-tags"><span>Python</span><span>NumPy</span><span>pandas</span></div>
               </div>
             </article>
-            <article class="timeline-item">
+            <article class="xp-card">
               <time data-i18n="job.microsemi.date"></time>
               <div>
                 <h3 data-i18n="job.microsemi.title"></h3>
-                <p data-i18n="job.microsemi.body"></p>
+                <p class="xp-role" data-i18n="job.microsemi.body"></p>
                 <div class="mini-tags"><span>Python</span><span>C++</span></div>
               </div>
             </article>
-            <article class="timeline-item">
+            <article class="xp-card">
               <time data-i18n="job.orbcomm.date"></time>
               <div>
                 <h3 data-i18n="job.orbcomm.title"></h3>
-                <p data-i18n="job.orbcomm.body"></p>
+                <p class="xp-role" data-i18n="job.orbcomm.body"></p>
                 <div class="mini-tags"><span>Python</span><span>C#</span><span>Automation</span></div>
               </div>
             </article>
-            <article class="timeline-item">
+            <article class="xp-card">
               <time data-i18n="job.raCommunity.date"></time>
               <div>
                 <h3 data-i18n="job.raCommunity.title"></h3>
-                <p data-i18n="job.raCommunity.body"></p>
+                <p class="xp-role" data-i18n="job.raCommunity.body"></p>
                 <div class="mini-tags"><span>AWS</span><span>Python</span></div>
               </div>
             </article>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="resume-section" aria-labelledby="skills-title">
-        <div class="section-index">03</div>
-        <div class="section-body">
-          <p class="section-kicker" data-i18n="skills.kicker">Skills</p>
-          <h2 id="skills-title" data-i18n="skills.title">Technical Areas</h2>
+        <section id="skills" class="content-section" aria-labelledby="skills-title">
+          <div class="section-title">
+            <span class="mono-label">03</span>
+            <h2 id="skills-title" data-i18n="skills.title">Technical Areas</h2>
+          </div>
           <div class="skill-groups">
             <div class="skill-group">
-              <h3 data-i18n="skills.languages"></h3>
+              <h3 data-i18n="skills.languages">Languages</h3>
               <div class="skill-list"><span>Python</span><span>Java</span><span>TypeScript</span><span>JavaScript</span><span>C++</span><span>C#</span></div>
             </div>
             <div class="skill-group">
-              <h3 data-i18n="skills.stack"></h3>
+              <h3 data-i18n="skills.stack">Frontend &amp; Backend</h3>
               <div class="skill-list"><span>React</span><span>Spring Boot</span><span>Node.js</span><span>GraphQL</span><span>WebSockets</span><span>CometD</span></div>
             </div>
             <div class="skill-group">
-              <h3 data-i18n="skills.tools"></h3>
+              <h3 data-i18n="skills.tools">Dev Tools</h3>
               <div class="skill-list"><span>Git</span><span>Bitbucket</span><span>Docker</span><span>Jenkins</span><span>Kafka</span><span>MongoDB</span><span>PostgreSQL</span><span>H2</span><span>AWS</span></div>
             </div>
             <div class="skill-group">
-              <h3 data-i18n="skills.ml"></h3>
+              <h3 data-i18n="skills.ml">Machine Learning</h3>
               <div class="skill-list"><span>PyTorch</span><span>NumPy</span><span>pandas</span><span>llama.cpp</span><span>Transformers</span><span>Hugging Face</span><span>Graph Neural Networks</span></div>
             </div>
             <div class="skill-group">
-              <h3 data-i18n="skills.ai"></h3>
+              <h3 data-i18n="skills.ai">AI Tools</h3>
               <div class="skill-list"><span>Claude</span><span>Cursor</span><span>AWS AI-DLC</span></div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="resume-section education-research" aria-label="Education and publications">
-        <div class="section-index">04</div>
-        <div class="section-body split-section">
-          <article>
-            <p class="section-kicker" data-i18n="education.kicker">Education</p>
-            <h2 data-i18n="education.title">Education</h2>
-            <div class="detail-list">
-              <article>
-                <h3>University of Ottawa</h3>
-                <p data-i18n="education.master"></p>
-              </article>
-              <article>
-                <h3>University of Ottawa</h3>
-                <p data-i18n="education.bachelor"></p>
-              </article>
-            </div>
-          </article>
+        <section id="education" class="content-section" aria-labelledby="education-title">
+          <div class="section-title">
+            <span class="mono-label">04</span>
+            <h2 id="education-title" data-i18n="education.title">Education</h2>
+          </div>
+          <div class="edu-list">
+            <article class="edu-card">
+              <h3>University of Ottawa</h3>
+              <p data-i18n="education.master"></p>
+            </article>
+            <article class="edu-card">
+              <h3>University of Ottawa</h3>
+              <p data-i18n="education.bachelor"></p>
+            </article>
+          </div>
+        </section>
 
-          <article>
-            <p class="section-kicker" data-i18n="research.kicker">Research</p>
-            <h2 data-i18n="research.title">Publications</h2>
-            <div class="detail-list compact-list">
-              <article>
-                <h3><a class="pub-link" href="https://arxiv.org/abs/2105.13430" rel="noreferrer" data-i18n="research.pub3"></a></h3>
-                <p class="pub-meta" data-i18n="research.pub3meta"></p>
-              </article>
-              <article>
-                <h3><a class="pub-link" href="https://arxiv.org/abs/2012.14059" rel="noreferrer" data-i18n="research.pub1"></a></h3>
-                <p class="pub-meta" data-i18n="research.pub1meta"></p>
-              </article>
-              <article>
-                <h3 data-i18n="research.pub2"></h3>
-              </article>
-            </div>
-            <div class="award-callout">
-              <strong data-i18n="research.honor">Honor</strong>
-              <span data-i18n="research.award">Merit scholarship</span>
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
+        <section id="publications" class="content-section" aria-labelledby="publications-title">
+          <div class="section-title">
+            <span class="mono-label">05</span>
+            <h2 id="publications-title" data-i18n="research.title">Publications</h2>
+          </div>
+          <div class="pub-list">
+            <a class="pub-card" href="https://arxiv.org/abs/2105.13430" rel="noreferrer">
+              <h3 data-i18n="research.pub3"></h3>
+              <p class="pub-meta" data-i18n="research.pub3meta"></p>
+            </a>
+            <a class="pub-card" href="https://arxiv.org/abs/2012.14059" rel="noreferrer">
+              <h3 data-i18n="research.pub1"></h3>
+              <p class="pub-meta" data-i18n="research.pub1meta"></p>
+            </a>
+            <article class="pub-card">
+              <h3 data-i18n="research.pub2"></h3>
+            </article>
+          </div>
+          <div class="award-callout">
+            <strong data-i18n="research.honor">Honor</strong>
+            <span data-i18n="research.award">Merit scholarship</span>
+          </div>
+        </section>
 
-    <footer class="site-footer">
-      <p><span id="footer-year"></span> Yuanzheng Hu</p>
-      <a href="blog.html" data-i18n="nav.blog">白瀑博客</a>
-    </footer>
+        <footer class="content-footer">
+          <p>© <span id="footer-year"></span> Yuanzheng Hu</p>
+          <a href="blog.html" data-i18n="nav.blog">白瀑博客</a>
+        </footer>
+      </main>
+    </div>
 
     <script src="assets/js/posts.js" defer></script>
     <script src="assets/js/app.js" defer></script>

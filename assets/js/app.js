@@ -495,7 +495,7 @@
   function initTheme() {
     const button = $("#theme-toggle");
     const saved = localStorage.getItem("blog-theme");
-    const initialTheme = saved === "dark" || saved === "light" ? saved : "light";
+    const initialTheme = saved === "dark" || saved === "light" ? saved : "dark";
 
     function applyTheme(theme) {
       document.documentElement.dataset.theme = theme;
@@ -513,9 +513,41 @@
     }
   }
 
+  function initScrollSpy() {
+    const links = $$(".side-nav a[href^='#']");
+    if (!links.length || !("IntersectionObserver" in window)) {
+      return;
+    }
+    const map = new Map();
+    links.forEach((link) => {
+      const section = document.querySelector(link.getAttribute("href"));
+      if (section) {
+        map.set(section, link);
+      }
+    });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            links.forEach((link) => link.classList.remove("is-active"));
+            const link = map.get(entry.target);
+            if (link) {
+              link.classList.add("is-active");
+            }
+          }
+        });
+      },
+      { rootMargin: "-40% 0px -55% 0px" }
+    );
+    map.forEach((_, section) => observer.observe(section));
+  }
+
   function init() {
     initLanguage();
     initTheme();
+    if (page === "resume") {
+      initScrollSpy();
+    }
     setText("#footer-year", new Date().getFullYear());
 
     if (page === "blog") {
